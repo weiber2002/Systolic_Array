@@ -42,11 +42,29 @@
 ## 🧩 Results
 
 🧩 **PPA Summary**
-* The lowest clock cycle period achieved 3.7 ns in the .130 µm process.
-* The best ATP(area*timing*power) was 4.5 ns, 580,190 mm², and 0.208 mW. With computing time of 1318 ns, total execution time 6536 ns (including loading data, comparing output data).
-* The proportion of area for memory, control logic, systolic array are 36%, 22%, 23%, respectively.
-* The proportion of seqeuential and combinational logic is 45%, 55% respectively.
-* Nearly 99% cells are clock-gating.
+
+---
+* **The lowest clock cycle period achieved:**
+  **3.7 ns** in the *0.130 µm* process.
+
+* **Best ATP (Area × Timing × Power):**
+  - Timing: **4.5 ns**,
+  - Area: **580,190 mm²**,
+  - Power: **0.208 mW**,
+  - Computing time: **1318 ns**,
+  - Total execution time (including loading and comparing): **6536 ns**
+
+* **Area Proportion by Component:**
+  Memory: **36%**
+  Control Logic: **22%**
+  Systolic Array: **23%**
+
+* **Logic Composition:**
+  Sequential Logic: **45%**
+  Combinational Logic: **55%**
+
+* **Clock Gating Utilization:**
+  Nearly **99%** of cells are clock-gated.
    
 ![alt text](Image/Evaluation.png) 
 
