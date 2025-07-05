@@ -1,0 +1,103 @@
+0 
+31
++itf+/usr/cad/synopsys/vcs/cur/linux64/lib/vcsdp_lite.tab
++lint=TFIPC-L
++v2k
++vcsd1
++vpi
+-Mamsrun=
+-Masflags=
+-Mcc=gcc
+-Mcfl= -pipe -fPIC -O -I/usr/cad/synopsys/vcs/cur/include
+-Mcplusplus=g++
+-Mcrt0=
+-Mcrtn=
+-Mcsrc=
+-Mexternalobj=
+-Mldflags= -rdynamic
+-Mobjects= /usr/cad/synopsys/vcs/cur/linux64/lib/libvirsim.so /usr/cad/synopsys/vcs/cur/linux64/lib/liberrorinf.so /usr/cad/synopsys/vcs/cur/linux64/lib/libsnpsmalloc.so /usr/cad/synopsys/vcs/cur/linux64/lib/libvfs.so
+-Mout=simv
+-Msaverestoreobj=/usr/cad/synopsys/vcs/cur/linux64/lib/vcs_save_restore_new.o
+-Msyslibs=-ldl
+-Mvcsaceobjs=
+-Mxcflags= -pipe -fPIC -I/usr/cad/synopsys/vcs/cur/include
+-Mxllcflags=
+-Xvcs_run_simv=1
+-debug_access+all
+-f rtl_01.f
+-full64
+-gen_obj
+-picarchive
+-sverilog
+/usr/cad/synopsys/vcs/cur/linux64/bin/vcs1
+rtl_01.f
+53
+XLOCALEDIR=/usr/cad/synopsys/icc2/cur/etc/locale
+XDG_SESSION_ID=10123
+XDG_RUNTIME_DIR=/run/user/2027
+VMR_MODE_FLAG=64
+VENDOR=unknown
+VC_STATIC_HOME=/usr/cad/synopsys/vc_formal/cur/
+VCS_PATHMAP_PRELOAD_DONE=1
+VCS_MX_HOME_INTERNAL=1
+VCS_MODE_FLAG=64
+VCS_HOME=/usr/cad/synopsys/vcs/cur
+VCS_EXEC_DONE=1
+VCS_DEPTH=0
+VCS_CC=gcc
+VCS_ARG_ADDED_FOR_TMP=1
+VCS_ARCH=linux64
+UNAME=/bin/uname
+TOOL_HOME=/usr/cad/synopsys/vcs/cur/linux64
+SYN_MAN_DIR=/usr/cad/synopsys/synthesis/cur/doc/syn/man
+SYNTHESIS=/usr/cad/synopsys/synthesis/cur
+SYNOPSYS=/usr/cad/synopsys/icc/cur
+SSH_TTY=/dev/pts/1
+SSH_CONNECTION=140.112.252.195 10198 192.168.1.201 30101
+SSH_CLIENT=140.112.252.195 10198 30101
+SNPS_VCS_CLANG_PATH=/usr/cad/synopsys/vcs/cur/linux64/clang
+SHLIB_PATH=/usr/cad/synopsys/verdi/cur/etc/lib/libstdc++/LINUX64/
+SG_HTML_BROWSER=/usr/bin/mozilla
+SELINUX_USE_CURRENT_RANGE=
+SELINUX_ROLE_REQUESTED=
+SELINUX_LEVEL_REQUESTED=
+SC_HLPPATH=/usr/cad/synopsys/laker_oa/cur
+SCRNAME=vcs
+SCRIPT_NAME=vcs
+REMOTEHOST=LAICHEN.m8.ntu.edu.tw
+QT_PLUGIN_PATH=/usr/lib64/kde4/plugins:/usr/lib/kde4/plugins
+QT_GRAPHICSSYSTEM_CHECKED=1
+QTLIB=/usr/lib64/qt-3.3/lib
+QTINC=/usr/lib64/qt-3.3/include
+QTDIR=/usr/lib64/qt-3.3
+PRIMETIME=/usr/cad/synopsys/primetime/cur
+OVA_UUM=0
+OSTYPE=linux
+MGC_TMPDIR=/tmp
+MGC_LOCATION_MAP=NO_MAP
+MGC_HOME=/usr/cad/mentor/calibre/cur
+Laker_TCL_ToolBox=1
+Laker_TCL_L3=1
+LESSOPEN=||/usr/bin/lesspipe.sh %s
+LC_ALL=C
+KDEDIRS=/usr
+HOSTTYPE=x86_64-linux
+GROUP=DCSLab
+CDS_Netlisting_Mode=Analog
+CDSHOME=/usr/cad/cadence/IC/IC_06.18.210
+0
+0
+6
+1751559378 ./systolic.sv
+1751558210 ./top.sv
+1751690063 ./test.sv
+1630295641 /usr/cad/synopsys/verdi/cur/share/PLI/VCS/LINUX64/novas.tab
+1751110493 rtl_01.f
+1630379311 /usr/cad/synopsys/vcs/cur/linux64/lib/vcsdp_lite.tab
+4
+1630381392 /usr/cad/synopsys/vcs/cur/linux64/lib/libvirsim.so
+1630379964 /usr/cad/synopsys/vcs/cur/linux64/lib/liberrorinf.so
+1630379861 /usr/cad/synopsys/vcs/cur/linux64/lib/libsnpsmalloc.so
+1630379961 /usr/cad/synopsys/vcs/cur/linux64/lib/libvfs.so
+1751692026 simv.daidir
+-1 partitionlib

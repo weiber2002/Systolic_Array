@@ -1,0 +1,10 @@
+#######################################################################################
+# fsdb.xxxxx.log : log primitive debug message of FSDB Reader
+# This is for R&D to analyze when there are issues happening when FSDB reading
+# The corresponding FSDB file is /home/weiber/Georgia/01_RTL/top.fsdb
+#######################################################################################
+[BASIC]Reader version : Chronologic Simulation VCS Release S-2021.09_Full64
+[BASIC]simulator version : Chronologic Simulation VCS Release S-2021.09_Full64
+[BASIC]dumper version : FSDB Dumper for VCS, Release Verdi_S-2021.09, Linux x86_64/64bit, 08/29/2021
+[THREAD]The MTR thread count is 12
+[THREAD]Secondary thread count: 5

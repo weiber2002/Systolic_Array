@@ -1,0 +1,44 @@
+ 
+****************************************
+Report : area
+Design : top
+Version: U-2022.12
+Date   : Sat Jul  5 05:18:19 2025
+****************************************
+
+Library(s) Used:
+
+    slow (File: /home/raid7_2/course/cvsd/CBDK_IC_Contest/CIC/SynopsysDC/db/slow.db)
+
+Number of ports:                          483
+Number of nets:                         39869
+Number of cells:                        37022
+Number of combinational cells:          29331
+Number of sequential cells:              7690
+Number of macros/black boxes:               0
+Number of buf/inv:                       2356
+Number of references:                      96
+
+Combinational area:             368001.407507
+Buf/Inv area:                    12963.043758
+Noncombinational area:          253963.282753
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (No wire load specified)
+
+Total cell area:                621964.690260
+Total area:                 undefined
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area              Local cell area
+                                  --------------------  -------------------------------- 
+Hierarchical cell                 Absolute     Percent  Combi-       Noncombi-    Black-
+                                  Total        Total    national     national     boxes   Design
+--------------------------------  -----------  -------  -----------  -----------  ------  ---------
+top                               621964.6903    100.0  127512.0788  200488.3942  0.0000  top
+systolic_inst                     293964.2172     47.3  240489.3287   53474.8885  0.0000  systolic
+--------------------------------  -----------  -------  -----------  -----------  ------  ---------
+Total                                                   368001.4075  253963.2828  0.0000
+
+1

@@ -1,0 +1,506 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 10
+Design : top
+Version: U-2022.12
+Date   : Sat Jul  5 05:18:19 2025
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: slow   Library: slow
+Wire Load Model Mode: top
+
+  Startpoint: systolic_inst/pe11/a_r_reg[3]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: systolic_inst/pe12/o_r_reg[31]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.10       0.10
+  systolic_inst/pe11/a_r_reg[3]/CK (DFFRX1)               0.00 #     0.10 r
+  systolic_inst/pe11/a_r_reg[3]/Q (DFFRX1)                0.63       0.73 f
+  systolic_inst/U13179/Y (XNOR2X1)                        0.19       0.92 f
+  systolic_inst/U13180/Y (OAI22XL)                        0.30       1.23 r
+  systolic_inst/U13212/S (ADDFX1)                         0.38       1.61 r
+  systolic_inst/U13268/S (ADDFX1)                         0.39       2.00 f
+  systolic_inst/U13288/S (ADDFX1)                         0.40       2.40 f
+  systolic_inst/U8101/Y (NAND2XL)                         0.15       2.56 r
+  systolic_inst/U9393/Y (OA21X4)                          0.16       2.72 r
+  systolic_inst/U5663/Y (OA21X4)                          0.13       2.84 r
+  systolic_inst/U4990/Y (OAI2BB1X4)                       0.07       2.91 f
+  systolic_inst/U2652/Y (NAND3X2)                         0.07       2.98 r
+  systolic_inst/U3180/Y (NAND3X2)                         0.08       3.06 f
+  systolic_inst/U5662/Y (OAI2BB1X4)                       0.16       3.22 f
+  systolic_inst/U5661/Y (INVX8)                           0.09       3.31 r
+  systolic_inst/U8370/Y (OAI21X2)                         0.06       3.37 f
+  systolic_inst/U106/Y (XOR2X1)                           0.14       3.51 f
+  systolic_inst/U3039/Y (OAI22X1)                         0.10       3.62 r
+  systolic_inst/pe12/o_r_reg[31]/D (DFFRX2)               0.00       3.62 r
+  data arrival time                                                  3.62
+
+  clock clk (rise edge)                                   3.80       3.80
+  clock network delay (ideal)                             0.10       3.90
+  clock uncertainty                                      -0.10       3.80
+  systolic_inst/pe12/o_r_reg[31]/CK (DFFRX2)              0.00       3.80 r
+  library setup time                                     -0.18       3.62
+  data required time                                                 3.62
+  --------------------------------------------------------------------------
+  data required time                                                 3.62
+  data arrival time                                                 -3.62
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+  Startpoint: systolic_inst/pe11/a_r_reg[3]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: systolic_inst/pe12/o_r_reg[30]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.10       0.10
+  systolic_inst/pe11/a_r_reg[3]/CK (DFFRX1)               0.00 #     0.10 r
+  systolic_inst/pe11/a_r_reg[3]/Q (DFFRX1)                0.63       0.73 f
+  systolic_inst/U13179/Y (XNOR2X1)                        0.19       0.92 f
+  systolic_inst/U13180/Y (OAI22XL)                        0.30       1.23 r
+  systolic_inst/U13212/S (ADDFX1)                         0.38       1.61 r
+  systolic_inst/U13268/S (ADDFX1)                         0.39       2.00 f
+  systolic_inst/U13288/S (ADDFX1)                         0.40       2.40 f
+  systolic_inst/U8101/Y (NAND2XL)                         0.15       2.56 r
+  systolic_inst/U9393/Y (OA21X4)                          0.16       2.72 r
+  systolic_inst/U5663/Y (OA21X4)                          0.13       2.84 r
+  systolic_inst/U4990/Y (OAI2BB1X4)                       0.07       2.91 f
+  systolic_inst/U2652/Y (NAND3X2)                         0.07       2.98 r
+  systolic_inst/U3180/Y (NAND3X2)                         0.08       3.06 f
+  systolic_inst/U5662/Y (OAI2BB1X4)                       0.16       3.22 f
+  systolic_inst/U5661/Y (INVX8)                           0.09       3.31 r
+  systolic_inst/U8365/Y (OAI21X2)                         0.06       3.37 f
+  systolic_inst/U14651/Y (XNOR2X1)                        0.10       3.48 r
+  systolic_inst/U14652/Y (OAI2BB2X2)                      0.15       3.63 r
+  systolic_inst/pe12/o_r_reg[30]/D (DFFRX2)               0.00       3.63 r
+  data arrival time                                                  3.63
+
+  clock clk (rise edge)                                   3.80       3.80
+  clock network delay (ideal)                             0.10       3.90
+  clock uncertainty                                      -0.10       3.80
+  systolic_inst/pe12/o_r_reg[30]/CK (DFFRX2)              0.00       3.80 r
+  library setup time                                     -0.17       3.63
+  data required time                                                 3.63
+  --------------------------------------------------------------------------
+  data required time                                                 3.63
+  data arrival time                                                 -3.63
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+  Startpoint: systolic_inst/pe23/b_r_reg[1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: systolic_inst/pe33/o_r_reg[19]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.10       0.10
+  systolic_inst/pe23/b_r_reg[1]/CK (DFFRX4)               0.00 #     0.10 r
+  systolic_inst/pe23/b_r_reg[1]/Q (DFFRX4)                0.53       0.63 f
+  systolic_inst/U9036/Y (XNOR2X4)                         0.18       0.82 f
+  systolic_inst/U1248/Y (CLKBUFX8)                        0.17       0.99 f
+  systolic_inst/U8727/Y (OAI22X2)                         0.21       1.20 r
+  systolic_inst/U7782/CO (ADDFHX2)                        0.28       1.47 r
+  systolic_inst/U11685/S (ADDFX1)                         0.45       1.92 f
+  systolic_inst/U7218/CO (ADDFHX2)                        0.38       2.30 f
+  systolic_inst/U3517/Y (INVX2)                           0.06       2.36 r
+  systolic_inst/U3479/Y (NAND2X2)                         0.05       2.40 f
+  systolic_inst/U3436/Y (NAND2X2)                         0.06       2.47 r
+  systolic_inst/U5726/Y (XOR2X4)                          0.11       2.58 r
+  systolic_inst/U3833/Y (NOR2X6)                          0.09       2.67 f
+  systolic_inst/U5946/Y (NOR2X4)                          0.06       2.73 r
+  systolic_inst/U5922/Y (NAND2X1)                         0.07       2.81 f
+  systolic_inst/U5275/Y (OAI21X2)                         0.21       3.02 r
+  systolic_inst/U3248/Y (INVX3)                           0.09       3.11 f
+  systolic_inst/U12997/Y (OAI21XL)                        0.20       3.31 r
+  systolic_inst/U2124/Y (XOR2X1)                          0.21       3.52 f
+  systolic_inst/U9260/Y (OAI22X1)                         0.10       3.62 r
+  systolic_inst/pe33/o_r_reg[19]/D (DFFRX2)               0.00       3.62 r
+  data arrival time                                                  3.62
+
+  clock clk (rise edge)                                   3.80       3.80
+  clock network delay (ideal)                             0.10       3.90
+  clock uncertainty                                      -0.10       3.80
+  systolic_inst/pe33/o_r_reg[19]/CK (DFFRX2)              0.00       3.80 r
+  library setup time                                     -0.18       3.62
+  data required time                                                 3.62
+  --------------------------------------------------------------------------
+  data required time                                                 3.62
+  data arrival time                                                 -3.62
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+  Startpoint: systolic_inst/state_r_reg[0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: systolic_inst/pe10/o_r_reg[31]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.10       0.10
+  systolic_inst/state_r_reg[0]/CK (DFFRX4)                0.00 #     0.10 r
+  systolic_inst/state_r_reg[0]/Q (DFFRX4)                 0.47       0.57 f
+  systolic_inst/U2235/Y (NAND2X6)                         0.08       0.65 r
+  systolic_inst/U2889/Y (BUFX20)                          0.11       0.76 r
+  systolic_inst/U5853/Y (NOR2X8)                          0.07       0.83 f
+  systolic_inst/U3953/Y (INVX8)                           0.07       0.90 r
+  systolic_inst/U4848/Y (INVX20)                          0.08       0.98 f
+  systolic_inst/U10174/Y (NAND2X1)                        0.09       1.07 r
+  systolic_inst/U7947/Y (NAND2X2)                         0.09       1.16 f
+  systolic_inst/U1589/Y (NOR2X6)                          0.19       1.35 r
+  systolic_inst/U7137/Y (XOR2X4)                          0.17       1.51 f
+  systolic_inst/U7798/Y (OAI22X2)                         0.15       1.67 r
+  systolic_inst/U1369/CO (ADDHX1)                         0.20       1.86 r
+  systolic_inst/U3269/Y (XOR2X1)                          0.15       2.02 f
+  systolic_inst/U819/Y (XOR2X1)                           0.17       2.18 r
+  systolic_inst/U701/Y (XOR2X1)                           0.22       2.40 r
+  systolic_inst/U7467/Y (XOR2X4)                          0.17       2.57 f
+  systolic_inst/U3895/Y (NAND2BX2)                        0.16       2.74 f
+  systolic_inst/U4529/Y (NAND2X2)                         0.10       2.83 r
+  systolic_inst/U4525/Y (NOR2X4)                          0.06       2.89 f
+  systolic_inst/U3990/Y (AOI21X4)                         0.13       3.02 r
+  systolic_inst/U4140/Y (OAI21X4)                         0.09       3.12 f
+  systolic_inst/U4643/Y (AOI21X4)                         0.16       3.28 r
+  systolic_inst/U4806/Y (OAI21X1)                         0.09       3.36 f
+  systolic_inst/U10248/Y (XOR2XL)                         0.15       3.51 f
+  systolic_inst/U10249/Y (OAI22X1)                        0.11       3.62 r
+  systolic_inst/pe10/o_r_reg[31]/D (DFFRX2)               0.00       3.62 r
+  data arrival time                                                  3.62
+
+  clock clk (rise edge)                                   3.80       3.80
+  clock network delay (ideal)                             0.10       3.90
+  clock uncertainty                                      -0.10       3.80
+  systolic_inst/pe10/o_r_reg[31]/CK (DFFRX2)              0.00       3.80 r
+  library setup time                                     -0.18       3.62
+  data required time                                                 3.62
+  --------------------------------------------------------------------------
+  data required time                                                 3.62
+  data arrival time                                                 -3.62
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+  Startpoint: systolic_inst/pe23/b_r_reg[1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: systolic_inst/pe33/o_r_reg[22]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.10       0.10
+  systolic_inst/pe23/b_r_reg[1]/CK (DFFRX4)               0.00 #     0.10 r
+  systolic_inst/pe23/b_r_reg[1]/Q (DFFRX4)                0.53       0.63 f
+  systolic_inst/U9036/Y (XNOR2X4)                         0.18       0.82 f
+  systolic_inst/U1248/Y (CLKBUFX8)                        0.17       0.99 f
+  systolic_inst/U8727/Y (OAI22X2)                         0.21       1.20 r
+  systolic_inst/U7782/CO (ADDFHX2)                        0.28       1.47 r
+  systolic_inst/U11685/S (ADDFX1)                         0.45       1.92 f
+  systolic_inst/U7218/CO (ADDFHX2)                        0.38       2.30 f
+  systolic_inst/U3517/Y (INVX2)                           0.06       2.36 r
+  systolic_inst/U3479/Y (NAND2X2)                         0.05       2.40 f
+  systolic_inst/U3436/Y (NAND2X2)                         0.06       2.47 r
+  systolic_inst/U5726/Y (XOR2X4)                          0.11       2.58 r
+  systolic_inst/U3833/Y (NOR2X6)                          0.09       2.67 f
+  systolic_inst/U5946/Y (NOR2X4)                          0.06       2.73 r
+  systolic_inst/U5922/Y (NAND2X1)                         0.07       2.81 f
+  systolic_inst/U5275/Y (OAI21X2)                         0.21       3.02 r
+  systolic_inst/U3248/Y (INVX3)                           0.09       3.11 f
+  systolic_inst/U11934/Y (OAI21XL)                        0.20       3.31 r
+  systolic_inst/U2127/Y (XOR2X1)                          0.21       3.52 f
+  systolic_inst/U11948/Y (OAI22X1)                        0.10       3.62 r
+  systolic_inst/pe33/o_r_reg[22]/D (DFFRX2)               0.00       3.62 r
+  data arrival time                                                  3.62
+
+  clock clk (rise edge)                                   3.80       3.80
+  clock network delay (ideal)                             0.10       3.90
+  clock uncertainty                                      -0.10       3.80
+  systolic_inst/pe33/o_r_reg[22]/CK (DFFRX2)              0.00       3.80 r
+  library setup time                                     -0.18       3.62
+  data required time                                                 3.62
+  --------------------------------------------------------------------------
+  data required time                                                 3.62
+  data arrival time                                                 -3.62
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+  Startpoint: systolic_inst/state_r_reg[0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: systolic_inst/pe00/o_r_reg[32]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.10       0.10
+  systolic_inst/state_r_reg[0]/CK (DFFRX4)                0.00 #     0.10 r
+  systolic_inst/state_r_reg[0]/Q (DFFRX4)                 0.47       0.57 f
+  systolic_inst/U2235/Y (NAND2X6)                         0.08       0.65 r
+  systolic_inst/U2234/Y (NOR2X4)                          0.07       0.71 f
+  systolic_inst/U1907/Y (NAND2X6)                         0.10       0.81 r
+  systolic_inst/U4230/Y (INVX20)                          0.08       0.89 f
+  systolic_inst/U1882/Y (NAND2X1)                         0.13       1.02 r
+  systolic_inst/U2090/Y (NAND3X4)                         0.14       1.16 f
+  systolic_inst/U4302/Y (XOR2X4)                          0.19       1.34 r
+  systolic_inst/U2212/Y (NAND2X6)                         0.11       1.45 f
+  systolic_inst/U1603/Y (BUFX12)                          0.15       1.60 f
+  systolic_inst/U1142/Y (OAI22X2)                         0.16       1.76 r
+  systolic_inst/U6569/Y (NAND2X2)                         0.07       1.83 f
+  systolic_inst/U6568/Y (CLKINVX1)                        0.14       1.97 r
+  systolic_inst/U808/Y (XOR2X2)                           0.19       2.16 r
+  systolic_inst/U9535/Y (XOR2X4)                          0.15       2.31 r
+  systolic_inst/U7240/Y (OAI21X1)                         0.09       2.40 f
+  systolic_inst/U9537/Y (OAI2BB1X1)                       0.12       2.52 r
+  systolic_inst/U2089/Y (OR2X4)                           0.16       2.67 r
+  systolic_inst/U5105/Y (NAND2X2)                         0.07       2.75 f
+  systolic_inst/U5300/Y (OAI21X4)                         0.13       2.88 r
+  systolic_inst/U5299/Y (AOI21X4)                         0.09       2.97 f
+  systolic_inst/U9283/Y (OAI21X4)                         0.13       3.09 r
+  systolic_inst/U9684/Y (AOI21X4)                         0.12       3.21 f
+  systolic_inst/U14117/Y (OAI21X1)                        0.13       3.34 r
+  systolic_inst/U5567/Y (XOR2XL)                          0.17       3.51 f
+  systolic_inst/U14120/Y (OAI22X1)                        0.11       3.62 r
+  systolic_inst/pe00/o_r_reg[32]/D (DFFRX2)               0.00       3.62 r
+  data arrival time                                                  3.62
+
+  clock clk (rise edge)                                   3.80       3.80
+  clock network delay (ideal)                             0.10       3.90
+  clock uncertainty                                      -0.10       3.80
+  systolic_inst/pe00/o_r_reg[32]/CK (DFFRX2)              0.00       3.80 r
+  library setup time                                     -0.18       3.62
+  data required time                                                 3.62
+  --------------------------------------------------------------------------
+  data required time                                                 3.62
+  data arrival time                                                 -3.62
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+  Startpoint: systolic_inst/pe23/b_r_reg[12]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: systolic_inst/pe33/o_r_reg[23]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.10       0.10
+  systolic_inst/pe23/b_r_reg[12]/CK (DFFRX2)              0.00 #     0.10 r
+  systolic_inst/pe23/b_r_reg[12]/Q (DFFRX2)               0.52       0.62 f
+  systolic_inst/U9129/Y (CLKXOR2X2)                       0.25       0.87 r
+  systolic_inst/U5777/Y (NAND2X6)                         0.09       0.96 f
+  systolic_inst/U8832/Y (OAI22X1)                         0.13       1.09 r
+  systolic_inst/U697/S (ADDFX1)                           0.48       1.57 f
+  systolic_inst/U11899/S (ADDFX1)                         0.46       2.03 f
+  systolic_inst/U7880/Y (OAI2BB1X1)                       0.21       2.24 f
+  systolic_inst/U2790/Y (XOR2X1)                          0.15       2.39 f
+  systolic_inst/U7879/Y (XOR2X1)                          0.16       2.55 f
+  systolic_inst/U11931/Y (NAND2XL)                        0.17       2.72 r
+  systolic_inst/U7255/Y (OAI21X1)                         0.12       2.85 f
+  systolic_inst/U8694/Y (AOI21X2)                         0.14       2.99 r
+  systolic_inst/U11932/Y (CLKINVX1)                       0.11       3.10 f
+  systolic_inst/U8248/Y (AOI21XL)                         0.17       3.27 r
+  systolic_inst/U8249/Y (OAI21X1)                         0.09       3.36 f
+  systolic_inst/U9255/Y (XOR2XL)                          0.15       3.51 f
+  systolic_inst/U9253/Y (OAI22X1)                         0.11       3.62 r
+  systolic_inst/pe33/o_r_reg[23]/D (DFFRX2)               0.00       3.62 r
+  data arrival time                                                  3.62
+
+  clock clk (rise edge)                                   3.80       3.80
+  clock network delay (ideal)                             0.10       3.90
+  clock uncertainty                                      -0.10       3.80
+  systolic_inst/pe33/o_r_reg[23]/CK (DFFRX2)              0.00       3.80 r
+  library setup time                                     -0.18       3.62
+  data required time                                                 3.62
+  --------------------------------------------------------------------------
+  data required time                                                 3.62
+  data arrival time                                                 -3.62
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+  Startpoint: systolic_inst/pe23/b_r_reg[12]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: systolic_inst/pe33/o_r_reg[25]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.10       0.10
+  systolic_inst/pe23/b_r_reg[12]/CK (DFFRX2)              0.00 #     0.10 r
+  systolic_inst/pe23/b_r_reg[12]/Q (DFFRX2)               0.52       0.62 f
+  systolic_inst/U9129/Y (CLKXOR2X2)                       0.25       0.87 r
+  systolic_inst/U5777/Y (NAND2X6)                         0.09       0.96 f
+  systolic_inst/U8832/Y (OAI22X1)                         0.13       1.09 r
+  systolic_inst/U697/S (ADDFX1)                           0.48       1.57 f
+  systolic_inst/U11899/S (ADDFX1)                         0.46       2.03 f
+  systolic_inst/U7880/Y (OAI2BB1X1)                       0.21       2.24 f
+  systolic_inst/U2790/Y (XOR2X1)                          0.15       2.39 f
+  systolic_inst/U7879/Y (XOR2X1)                          0.16       2.55 f
+  systolic_inst/U11931/Y (NAND2XL)                        0.17       2.72 r
+  systolic_inst/U7255/Y (OAI21X1)                         0.12       2.85 f
+  systolic_inst/U8694/Y (AOI21X2)                         0.14       2.99 r
+  systolic_inst/U11932/Y (CLKINVX1)                       0.11       3.10 f
+  systolic_inst/U12979/Y (AOI21XL)                        0.17       3.27 r
+  systolic_inst/U7590/Y (OAI21X1)                         0.09       3.36 f
+  systolic_inst/U9252/Y (XOR2XL)                          0.15       3.51 f
+  systolic_inst/U9251/Y (OAI22X1)                         0.11       3.62 r
+  systolic_inst/pe33/o_r_reg[25]/D (DFFRX2)               0.00       3.62 r
+  data arrival time                                                  3.62
+
+  clock clk (rise edge)                                   3.80       3.80
+  clock network delay (ideal)                             0.10       3.90
+  clock uncertainty                                      -0.10       3.80
+  systolic_inst/pe33/o_r_reg[25]/CK (DFFRX2)              0.00       3.80 r
+  library setup time                                     -0.18       3.62
+  data required time                                                 3.62
+  --------------------------------------------------------------------------
+  data required time                                                 3.62
+  data arrival time                                                 -3.62
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+  Startpoint: systolic_inst/state_r_reg[0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: systolic_inst/pe00/o_r_reg[29]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.10       0.10
+  systolic_inst/state_r_reg[0]/CK (DFFRX4)                0.00 #     0.10 r
+  systolic_inst/state_r_reg[0]/Q (DFFRX4)                 0.47       0.57 f
+  systolic_inst/U2235/Y (NAND2X6)                         0.08       0.65 r
+  systolic_inst/U2234/Y (NOR2X4)                          0.07       0.71 f
+  systolic_inst/U1907/Y (NAND2X6)                         0.10       0.81 r
+  systolic_inst/U4230/Y (INVX20)                          0.08       0.89 f
+  systolic_inst/U1882/Y (NAND2X1)                         0.13       1.02 r
+  systolic_inst/U2090/Y (NAND3X4)                         0.14       1.16 f
+  systolic_inst/U4302/Y (XOR2X4)                          0.19       1.34 r
+  systolic_inst/U2212/Y (NAND2X6)                         0.11       1.45 f
+  systolic_inst/U1603/Y (BUFX12)                          0.15       1.60 f
+  systolic_inst/U1142/Y (OAI22X2)                         0.16       1.76 r
+  systolic_inst/U6569/Y (NAND2X2)                         0.07       1.83 f
+  systolic_inst/U6568/Y (CLKINVX1)                        0.14       1.97 r
+  systolic_inst/U808/Y (XOR2X2)                           0.19       2.16 r
+  systolic_inst/U9535/Y (XOR2X4)                          0.15       2.31 r
+  systolic_inst/U7240/Y (OAI21X1)                         0.09       2.40 f
+  systolic_inst/U9537/Y (OAI2BB1X1)                       0.12       2.52 r
+  systolic_inst/U2089/Y (OR2X4)                           0.16       2.67 r
+  systolic_inst/U5105/Y (NAND2X2)                         0.07       2.75 f
+  systolic_inst/U5300/Y (OAI21X4)                         0.13       2.88 r
+  systolic_inst/U5299/Y (AOI21X4)                         0.09       2.97 f
+  systolic_inst/U9283/Y (OAI21X4)                         0.13       3.09 r
+  systolic_inst/U9684/Y (AOI21X4)                         0.12       3.21 f
+  systolic_inst/U11176/Y (OAI21X1)                        0.15       3.37 r
+  systolic_inst/U11178/Y (XOR2X1)                         0.16       3.52 f
+  systolic_inst/U9745/Y (OAI2BB1X1)                       0.17       3.69 f
+  systolic_inst/pe00/o_r_reg[29]/D (DFFRX2)               0.00       3.69 f
+  data arrival time                                                  3.69
+
+  clock clk (rise edge)                                   3.80       3.80
+  clock network delay (ideal)                             0.10       3.90
+  clock uncertainty                                      -0.10       3.80
+  systolic_inst/pe00/o_r_reg[29]/CK (DFFRX2)              0.00       3.80 r
+  library setup time                                     -0.11       3.69
+  data required time                                                 3.69
+  --------------------------------------------------------------------------
+  data required time                                                 3.69
+  data arrival time                                                 -3.69
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+  Startpoint: systolic_inst/propagate_num_r_reg[2]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: systolic_inst/pe00/o_r_reg[26]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.10       0.10
+  systolic_inst/propagate_num_r_reg[2]/CK (DFFRX4)        0.00 #     0.10 r
+  systolic_inst/propagate_num_r_reg[2]/Q (DFFRX4)         0.50       0.60 f
+  systolic_inst/U4546/Y (NOR2X8)                          0.09       0.69 r
+  systolic_inst/U1909/Y (NAND2X4)                         0.09       0.78 f
+  systolic_inst/U4545/Y (NOR2X8)                          0.12       0.90 r
+  systolic_inst/U4516/Y (BUFX20)                          0.15       1.06 r
+  systolic_inst/U4975/Y (NAND2X6)                         0.05       1.11 f
+  systolic_inst/U1818/Y (INVX4)                           0.06       1.16 r
+  systolic_inst/U4549/Y (NOR2X6)                          0.06       1.22 f
+  systolic_inst/U5688/Y (BUFX16)                          0.12       1.34 f
+  systolic_inst/U1580/Y (INVX16)                          0.07       1.41 r
+  systolic_inst/U7982/Y (XNOR2X4)                         0.17       1.58 f
+  systolic_inst/U5073/Y (OAI22X4)                         0.17       1.75 r
+  systolic_inst/U1017/Y (BUFX4)                           0.14       1.89 r
+  systolic_inst/U4412/Y (XOR2X4)                          0.14       2.03 r
+  systolic_inst/U2227/Y (XOR2X2)                          0.19       2.23 r
+  systolic_inst/U4409/Y (XOR2X4)                          0.17       2.39 f
+  systolic_inst/U488/Y (BUFX3)                            0.15       2.54 f
+  systolic_inst/U4833/Y (OAI21X4)                         0.10       2.64 r
+  systolic_inst/U4838/Y (NAND2X4)                         0.09       2.73 f
+  systolic_inst/U4836/Y (NOR2X8)                          0.11       2.84 r
+  systolic_inst/U4544/Y (NOR2X8)                          0.07       2.91 f
+  systolic_inst/U4543/Y (AOI21X4)                         0.12       3.03 r
+  systolic_inst/U9283/Y (OAI21X4)                         0.09       3.11 f
+  systolic_inst/U9684/Y (AOI21X4)                         0.16       3.28 r
+  systolic_inst/U2245/Y (XOR2XL)                          0.19       3.47 r
+  systolic_inst/U2244/Y (OAI2BB1X1)                       0.17       3.64 r
+  systolic_inst/pe00/o_r_reg[26]/D (DFFRX2)               0.00       3.64 r
+  data arrival time                                                  3.64
+
+  clock clk (rise edge)                                   3.80       3.80
+  clock network delay (ideal)                             0.10       3.90
+  clock uncertainty                                      -0.10       3.80
+  systolic_inst/pe00/o_r_reg[26]/CK (DFFRX2)              0.00       3.80 r
+  library setup time                                     -0.16       3.64
+  data required time                                                 3.64
+  --------------------------------------------------------------------------
+  data required time                                                 3.64
+  data arrival time                                                 -3.64
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+1
